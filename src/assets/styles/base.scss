@@ -23,6 +23,9 @@
   .main {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
+}
+.hide {
+  display: none !important;
 }

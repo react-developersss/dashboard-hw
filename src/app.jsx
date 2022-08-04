@@ -57,13 +57,13 @@ class App extends Component {
 
   handleElement = (title) => {
     this.setState({
+      // eslint-disable-next-line react/no-direct-mutation-state
       title: (this.state.title = title),
     });
   };
 
   handleOpen = () => {
     this.setState({ isDashboard: !this.state.isDashboard });
-    console.log(this.state);
   };
 
   render() {

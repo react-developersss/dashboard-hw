@@ -3,19 +3,20 @@ import Board from "./components/board";
 
 import "./dashboard.scss";
 
-function Dashboard({ boards, onElement }) {
+function Dashboard({ boards, onElement, dashboard }) {
   return (
-    <div className="dashboard">
+    <div className= "dashboard">
       <div className="logo">
         {logo}
-        MingCute
+        <span className= {dashboard ? 'hide' : ''}>MingCute</span>
       </div>
-      <div className="input-wrapper">
+      <div className= {dashboard ? 'hide' : "input-wrapper"}>
         {search}
-        <input type="text" placeholder="search" />
+        <input  type="text" placeholder="search" />
       </div>
       {boards.map((board, idx) => (
         <Board
+          dashboard={dashboard}
           key={idx}
           onElement={onElement}
           board={board}
