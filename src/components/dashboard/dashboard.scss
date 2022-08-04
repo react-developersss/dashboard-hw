@@ -1,5 +1,4 @@
 .dashboard {
-  min-width: 240px;
   display: flex;
   padding: 1rem;
   flex-direction: column;
@@ -22,7 +21,7 @@
   .input-wrapper {
     position: relative;
 
-    width: 208px;
+    width: 100%;
 
     background: #f2f4f6;
     box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2),
@@ -54,4 +53,9 @@
       left: 17.67px;
     }
   }
+}
+
+
+.hide {
+  display: none !important;
 }

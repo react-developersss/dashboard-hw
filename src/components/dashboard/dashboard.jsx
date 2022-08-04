@@ -53,14 +53,14 @@ class Dashboard extends Component {
   render() {
     const { onActive } = this.props;
     return (
-      <div className="dashboard">
+      <div className= "dashboard">
         <div className="logo">
           {logo}
-          MingCute
+          <span className= "">MingCute</span>
         </div>
         <div className="input-wrapper">
           {search}
-          <input type="text" placeholder="search" />
+          <input className= "" type="text" placeholder="search" />
         </div>
 
         {boards.map((board, idx) => (

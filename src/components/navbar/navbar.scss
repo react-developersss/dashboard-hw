@@ -1,4 +1,12 @@
 .navbar {
   padding: 2rem;
   background-color: blue;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  i{
+    cursor: pointer;
+  }
 }

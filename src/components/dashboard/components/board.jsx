@@ -12,10 +12,10 @@ function Board({ icon, title, onActive }) {
     >
       <div className="type">
         {icon}
-        <span>{title}</span>
+        <span className="">{title}</span>
       </div>
-      {(title === "Orders" && <span className="message">5</span>) ||
-        (title === "Messages" && <span className="message">3</span>)}
+      {(title === "Orders" && <span className="message hide">5</span>) ||
+        (title === "Messages" && <span className="message ">3</span>)}
     </div>
   );
 }

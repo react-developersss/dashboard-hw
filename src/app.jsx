@@ -5,6 +5,7 @@ class App extends Component {
   state = {
     isDark: false,
     title: "",
+    isDashboard: false
   };
 
   handleActive = (selectedBoard) => {
@@ -13,12 +14,17 @@ class App extends Component {
     });
   };
 
+  handleOpen = ()=> {
+    this.setState({isDashboard: !this.state.isDashboard})
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div className="wrapper">
-        <Dashboard onActive={this.handleActive} />
+        <Dashboard onActive={this.handleActive} dashboard = {this.state.isDashboard}/>
         <div className="main">
-          <Navbar />
+          <Navbar onToggle = {this.handleOpen}/>
           <Banner value={this.state.title} />
         </div>
       </div>
