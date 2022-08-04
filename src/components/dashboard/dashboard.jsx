@@ -21,6 +21,7 @@ function Dashboard({ boards, onElement, dashboard }) {
           onElement={onElement}
           board={board}
           title={board.title}
+          
         />
       ))}
     </div>
