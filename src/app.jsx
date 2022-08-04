@@ -4,15 +4,22 @@ import "./assets/styles/base.scss";
 class App extends Component {
   state = {
     isDark: false,
+    title: "",
+  };
+
+  handleActive = (selectedBoard) => {
+    this.setState({
+      title: (this.state.title = selectedBoard),
+    });
   };
 
   render() {
     return (
       <div className="wrapper">
-        <Dashboard />
+        <Dashboard onActive={this.handleActive} active={this.isActive} />
         <div className="main">
           <Navbar />
-          <Banner />
+          <Banner value={this.state.title} />
         </div>
       </div>
     );

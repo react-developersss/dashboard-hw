@@ -1,10 +1,57 @@
 import React, { Component } from "react";
-import { logo, search } from "../../assets/images";
+import Board from "./components/board";
+import {
+  logo,
+  search,
+  analystic,
+  dashboard,
+  inbox,
+  messages,
+  news,
+  orders,
+  schedules,
+  settings,
+} from "../../assets/images";
+import "./dashboard.scss";
 
-import "./dashboard.scss"
+const boards = [
+  {
+    icon: dashboard,
+    title: "Dashboard",
+  },
+  {
+    icon: orders,
+    title: "Orders",
+  },
+  {
+    icon: schedules,
+    title: "Schedules",
+  },
+  {
+    icon: messages,
+    title: "Messages",
+  },
+  {
+    icon: inbox,
+    title: "Inbox",
+  },
+  {
+    icon: analystic,
+    title: "Analystic",
+  },
+  {
+    icon: news,
+    title: "News",
+  },
+  {
+    icon: settings,
+    title: "Settings",
+  },
+];
 
 class Dashboard extends Component {
   render() {
+    const { onActive, active } = this.props;
     return (
       <div className="dashboard">
         <div className="logo">
@@ -15,6 +62,16 @@ class Dashboard extends Component {
           {search}
           <input type="text" placeholder="search" />
         </div>
+
+        {boards.map((board, idx) => (
+          <Board
+            active={active}
+            key={idx}
+            icon={board.icon}
+            onActive={onActive}
+            title={board.title}
+          />
+        ))}
       </div>
     );
   }
