@@ -1,6 +1,57 @@
 .dashboard {
-  width: 15%;
+  min-width: 240px;
   display: flex;
   padding: 1rem;
   flex-direction: column;
+  padding: 30px 16px 0;
+
+  .logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #09244b;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  .input-wrapper {
+    position: relative;
+
+    width: 208px;
+
+    background: #f2f4f6;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2),
+      inset 0px 1px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    margin: 20px 0 16px;
+    padding: 16px 0px 16px 0px;
+
+    input {
+      width: 100%;
+      height: 100%;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: capitalize;
+
+      color: #b5bdc9;
+      border: none;
+      background: transparent;
+      padding-left: 48px;
+      outline: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 17.67px;
+    }
+  }
 }

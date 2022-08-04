@@ -1,14 +1,67 @@
 import React, { Component } from "react";
 import Board from "./components/board";
+import {
+  analystic,
+  dashboard,
+  search,
+  logo,
+  inbox,
+  messages,
+  news,
+  orders,
+  schedules,
+  settings,
+} from "../../assets/images/index";
 import "./dashboard.scss";
+
+const boards = [
+  {
+    icon: dashboard,
+    title: "Dashboard",
+  },
+  {
+    icon: orders,
+    title: "Orders",
+  },
+  {
+    icon: schedules,
+    title: "Schedules",
+  },
+  {
+    icon: messages,
+    title: "Messages",
+  },
+  {
+    icon: inbox,
+    title: "Inbox",
+  },
+  {
+    icon: analystic,
+    title: "Analystic",
+  },
+  {
+    icon: news,
+    title: "News",
+  },
+  {
+    icon: settings,
+    title: "Settings",
+  },
+];
 
 class Dashboard extends Component {
   render() {
-    const { onActive, boards } = this.props;
+    const { onActive } = this.props;
     return (
       <div className="dashboard">
-        <div className="logo">Asilbek</div>
-        <input type="text" placeholder="search" />
+        <div className="logo">
+          {logo}
+          MingCute
+        </div>
+        <div className="input-wrapper">
+          {search}
+          <input type="text" placeholder="search" />
+        </div>
 
         {boards.map((board, idx) => (
           <Board
