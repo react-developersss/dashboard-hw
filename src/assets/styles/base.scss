@@ -1,0 +1,27 @@
+@import url(//db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC);
+
+:root {
+  --item-active-bg: #007aff;
+  --item-hover-bg: #4491e3;
+  --bg-light: #fff;
+  --bg-dark: linear-gradient(0deg, #1b2130, #1b2130), #0f1e33;
+  --bg-search-dark: #131722;
+  --bg-search-light: #f2f4f6;
+}
+
+* {
+  @font-face {
+    font-family: "PingFang SC";
+    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot");
+    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot?#iefix")
+        format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff2")
+        format("woff2"),
+      url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff")
+        format("woff"),
+      url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.ttf")
+        format("truetype"),
+      url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC")
+        format("svg");
+  }
+}
