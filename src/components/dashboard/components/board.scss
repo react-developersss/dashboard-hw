@@ -52,29 +52,49 @@
     }
   }
 
-  &:focus {
-    background-color: var(--item-active-bg);
-    color: #fff;
+  // &:focus {
+  //   background-color: var(--item-active-bg);
+  //   color: #fff;
 
-    .type {
-      svg {
-        width: 30px;
-        height: 30px;
-        fill: #fff !important;
-      }
-    }
+  //   .type {
+  //     svg {
+  //       width: 30px;
+  //       height: 30px;
+  //       fill: #fff !important;
+  //     }
+  //   }
 
-    svg {
-      fill: #fff;
-    }
+  //   svg {
+  //     fill: #fff;
+  //   }
 
-    .message {
-      color: #526581;
-    }
-  }
-  
+  //   .message {
+  //     color: #526581;
+  //   }
+  // }
 }
 
 .hide {
   display: none !important;
+}
+
+.active {
+  background-color: var(--item-active-bg);
+  color: #fff;
+
+  .type {
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #fff !important;
+    }
+  }
+
+  svg {
+    fill: #fff;
+  }
+
+  .message {
+    color: #526581;
+  }
 }

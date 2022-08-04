@@ -53,12 +53,13 @@ class App extends Component {
     title: "",
     isDashboard: false,
     boards: boards,
+    isActive: false,
   };
 
-  handleElement = (title) => {
+  handleElement = (element, title) => {
     this.setState({
-      // eslint-disable-next-line react/no-direct-mutation-state
       title: (this.state.title = title),
+      isActive: true,
     });
   };
 
@@ -72,8 +73,8 @@ class App extends Component {
         <Dashboard
           boards={this.state.boards}
           onElement={this.handleElement}
-          onActive={this.handleActive}
           dashboard={this.state.isDashboard}
+          isActive={this.state.isActive}
         />
         <div className="main">
           <Navbar onToggle={this.handleOpen} />
