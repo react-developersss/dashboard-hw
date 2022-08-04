@@ -6,6 +6,7 @@ class Dashboard extends Component {
       <div>
         <div className="logo">Asilbek</div>
         <input type="text" placeholder='search' />
+        
       </div>
     )
   }
