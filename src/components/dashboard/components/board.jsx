@@ -1,14 +1,13 @@
 import React from "react";
 import "./board.scss";
 
-function Board({ icon, title, onActive, active }) {
+function Board({ icon, title, onActive }) {
   return (
     <div
       className="board"
       onClick={() => onActive(title)}
       style={{
         borderTop: `${title === "News" && "1px solid #f2f4f6"}`,
-        backgroundColor: `${active  ? "red" : ""}`,
       }}
     >
       <div className="type">
