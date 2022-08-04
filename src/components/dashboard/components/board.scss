@@ -7,22 +7,26 @@
   margin: 0.8rem 0;
   color: #526581;
   border-radius: 8px;
+  font-size: 18px;
   transition: all 0.1s linear;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 
-  .type {
+  span {
+    padding: 0 0.5rem;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: #8491a5;
+  }
+
+  .board-name {
     display: flex;
     align-items: center;
-
-    span {
-      padding: 0 0.5rem;
-    }
-
-    svg {
-      width: 30px;
-      height: 30px;
-      fill: #8491a5 !important;
-    }
+    gap: 0.7rem;
   }
 
   .message {
@@ -45,6 +49,27 @@
 
     svg {
       fill: #fff !important;
+    }
+  }
+
+  &:focus {
+    background-color: var(--item-active-bg);
+    color: #fff;
+
+    .type {
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: #fff !important;
+      }
+    }
+
+    svg {
+      fill: #fff;
+    }
+
+    .message {
+      color: #526581;
     }
   }
 }

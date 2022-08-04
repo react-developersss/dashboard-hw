@@ -1,22 +1,18 @@
 import React from "react";
 import "./board.scss";
 
-function Board({ icon, title, onActive }) {
+function Board({ board, onElement, title }) {
   return (
-    <div
-      className="board"
-      onClick={() => onActive(title)}
-      style={{
-        borderTop: `${title === "News" && "1px solid #f2f4f6"}`,
-      }}
-    >
-      <div className="type">
-        {icon}
-        <span>{title}</span>
-      </div>
-      {(title === "Orders" && <span className="message">5</span>) ||
-        (title === "Messages" && <span className="message">3</span>)}
-    </div>
+    <>
+      <button className="board" onClick={(e) => onElement(title)}>
+        <div className="board-name">
+          {board.icon} {board.title}
+        </div>
+
+        {(title === "Orders" && <span className="message">5</span>) ||
+          (title === "Messages" && <span className="message">3</span>)}
+      </button>
+    </>
   );
 }
 
