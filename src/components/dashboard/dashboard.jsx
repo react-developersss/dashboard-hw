@@ -3,7 +3,10 @@ import React, { Component } from 'react'
 class Dashboard extends Component {
   render() {
     return (
-      <div>Dashboard</div>
+      <div>
+        <div className="logo">Asilbek</div>
+        <input type="text" placeholder='search' />
+      </div>
     )
   }
 }
