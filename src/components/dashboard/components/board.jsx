@@ -2,13 +2,10 @@ import React from "react";
 import "./board.scss";
 import "../../../assets/styles/base.scss";
 
-function Board({ board, onElement, title, dashboard, isActive }) {
+function Board({ board, onElement, title, dashboard }) {
   return (
     <>
-      <button
-        className={`board ${isActive ? "active" : ""}`}
-        onClick={(e) => onElement(e.target, title)}
-      >
+      <button className="board" onClick={(e) => onElement(e.target, title)}>
         <div className="board-name">
           {board.icon}
           <span className={dashboard ? "hide " : ""}>{board.title}</span>

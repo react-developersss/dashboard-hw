@@ -53,13 +53,12 @@ class App extends Component {
     title: "",
     isDashboard: false,
     boards: boards,
-    isActive: false,
   };
 
   handleElement = (element, title) => {
     this.setState({
       title: (this.state.title = title),
-      isActive: true,
+    
     });
   };
 
@@ -74,7 +73,6 @@ class App extends Component {
           boards={this.state.boards}
           onElement={this.handleElement}
           dashboard={this.state.isDashboard}
-          isActive={this.state.isActive}
         />
         <div className="main">
           <Navbar onToggle={this.handleOpen} />
