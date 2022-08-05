@@ -1,14 +1,9 @@
-import React, { Component } from "react";
 import "./banner.scss";
-class Banner extends Component {
-  render() {
-    const { value } = this.props;
-    return (
-      <div className="banner">
-        <h1>{value}</h1>
-      </div>
-    );
-  }
+function Banner({ value }) {
+  return (
+    <div className="banner">
+      <p>{value}</p>
+    </div>
+  );
 }
-
 export default Banner;

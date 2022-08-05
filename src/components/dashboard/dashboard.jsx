@@ -12,9 +12,13 @@ function Dashboard({ boards, onElement, dashboard }) {
           {logo}
           <span className={dashboard ? "hide" : ""}>MingCute</span>
         </div>
-        <div className={dashboard ? "hide" : "input-wrapper"}>
+        <div className="input-wrapper">
           {search}
-          <input type="text" placeholder="search" />
+          <input
+            className={dashboard ? "hide" : ""}
+            type="text"
+            placeholder="search"
+          />
         </div>
         {boards.map((board, idx) => (
           <Board
@@ -26,7 +30,7 @@ function Dashboard({ boards, onElement, dashboard }) {
           />
         ))}
       </div>
-      <Footer dashboard = {dashboard}/>
+      <Footer dashboard={dashboard} />
     </div>
   );
 }

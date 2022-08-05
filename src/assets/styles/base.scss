@@ -1,27 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC);
 
-// :root {
-//   --item-active-bg: #007aff;
-//   --item-hover-bg: #4491e3;
-
-//   --bg-light: #fff;
-//   --bg-dark: linear-gradient(0deg, #1b2130, #1b2130), #0f1e33;
-
-//   --bg-search-dark: #131722;
-//   --bg-search-light: #f2f4f6;
-
-//   --text-color-light: #8491A5;
-//   --text-color-dark: #526581;
-
-//   --title-color-light: #09244B;
-//   --title-color-dark: #E8E9EA;
-
-//   --svg-bg-color-light:#8491A5;
-//   --svg-bg-color-dark:#8D9097;
-
-//   --footer-bg-color-light:#F2F4F6;
-//   --footer-bg-color-dark:rgba(255, 255, 255, 0.05);
-// }
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -36,30 +14,30 @@
 
     --item-active-color-light: #fff;
     --item-active-color-dark: #fff;
-  
+
     --bg-light: #fff;
     --bg-dark: #1b2130;
-  
+
     --bg-search-dark: #131722;
     --bg-search-light: #f2f4f6;
-  
-    --text-color-light: #8491A5;
-    --text-color-dark: #526581;
-  
-    --title-color-light: #09244B;
-    --title-color-dark: #E8E9EA;
-  
-    --footer-bg-color-light:#F2F4F6;
-    --footer-bg-color-dark:#262C3B;
 
-    --navbar-bg-color-light:#a9adb8;
-    --navbar-bg-color-dark:#141414;
+    --text-color-light: #8491a5;
+    --text-color-dark: #3d434c;
 
-    --navbar-title-color-light: #09244B;
-    --navbar-title-color-dark: #E8E9EA;
+    --title-color-light: #09244b;
+    --title-color-dark: #e8e9ea;
 
-    --banner-bg-color-light:#c2c8ce;
-    --banner-bg-color-dark:#373c47;
+    --footer-bg-color-light: #f2f4f6;
+    --footer-bg-color-dark: #262c3b;
+
+    --navbar-bg-color-light: #a9adb8;
+    --navbar-bg-color-dark: #141414;
+
+    --navbar-title-color-light: #09244b;
+    --navbar-title-color-dark: #e8e9ea;
+
+    --banner-bg-color-light: #c2c8ce;
+    --banner-bg-color-dark: #373c47;
   }
 }
 
@@ -79,31 +57,29 @@
 
     --bg-dark: #fff;
     --bg-light: #1b2130;
-  
+
     --bg-search-light: #131722;
     --bg-search-dark: #f2f4f6;
-  
-    --text-color-dark: #8491A5;
+
+    --text-color-dark: #8491a5;
     --text-color-light: #526581;
-  
-    --title-color-dark: #09244B;
-    --title-color-light: #E8E9EA;
-  
-    --footer-bg-color-dark:#F2F4F6;
-    --footer-bg-color-light:#262C3B;
-    
-    --navbar-bg-color-dark:#a9adb8;
-    --navbar-bg-color-light:#141414;
 
-    --navbar-title-color-dark: #09244B;
-    --navbar-title-color-light: #E8E9EA;
+    --title-color-dark: #09244b;
+    --title-color-light: #e8e9ea;
 
-    --banner-bg-color-light:#c2c8ce;
-    --banner-bg-color-dark:#373c47;
+    --footer-bg-color-dark: #f2f4f6;
+    --footer-bg-color-light: #262c3b;
+
+    --navbar-bg-color-dark: #a9adb8;
+    --navbar-bg-color-light: #141414;
+
+    --navbar-title-color-dark: #09244b;
+    --navbar-title-color-light: #e8e9ea;
+
+    --banner-bg-color-light: #c2c8ce;
+    --banner-bg-color-dark: #373c47;
   }
 }
-
-
 
 * {
   font-family: sans-serif;
@@ -114,7 +90,7 @@
 
 .wrapper {
   display: flex;
-  height: 983px;
+  height: 100vh;
 
   .main {
     display: flex;

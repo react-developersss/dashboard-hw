@@ -58,7 +58,6 @@ class App extends Component {
   handleElement = (element, title) => {
     this.setState({
       title: (this.state.title = title),
-    
     });
   };
 
@@ -82,6 +81,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
