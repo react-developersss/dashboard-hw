@@ -1,7 +1,7 @@
 .banner {
   padding: 1rem;
   background-color: var(--banner-bg-color-light);
-  height: 100vh;
+  height: calc(100vh - 80px);
   color: var(--text-color-dark);
   font-size: 30px;
 }
