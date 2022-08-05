@@ -1,13 +1,109 @@
 @import url(//db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC);
 
-:root {
-  --item-active-bg: #007aff;
-  --item-hover-bg: #4491e3;
-  --bg-light: #fff;
-  --bg-dark: linear-gradient(0deg, #1b2130, #1b2130), #0f1e33;
-  --bg-search-dark: #131722;
-  --bg-search-light: #f2f4f6;
+// :root {
+//   --item-active-bg: #007aff;
+//   --item-hover-bg: #4491e3;
+
+//   --bg-light: #fff;
+//   --bg-dark: linear-gradient(0deg, #1b2130, #1b2130), #0f1e33;
+
+//   --bg-search-dark: #131722;
+//   --bg-search-light: #f2f4f6;
+
+//   --text-color-light: #8491A5;
+//   --text-color-dark: #526581;
+
+//   --title-color-light: #09244B;
+//   --title-color-dark: #E8E9EA;
+
+//   --svg-bg-color-light:#8491A5;
+//   --svg-bg-color-dark:#8D9097;
+
+//   --footer-bg-color-light:#F2F4F6;
+//   --footer-bg-color-dark:rgba(255, 255, 255, 0.05);
+// }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --item-hover-bg-color-light: #007aff;
+    --item-hover-bg-color-dark: #4491e3;
+
+    --item-hover-color-light: #fff;
+    --item-hover-color-dark: #fff;
+
+    --item-active-bg-color-light: #4491e3;
+    --item-active-bg-color-dark: #4491e3;
+
+    --item-active-color-light: #fff;
+    --item-active-color-dark: #fff;
+  
+    --bg-light: #fff;
+    --bg-dark: #1b2130;
+  
+    --bg-search-dark: #131722;
+    --bg-search-light: #f2f4f6;
+  
+    --text-color-light: #8491A5;
+    --text-color-dark: #526581;
+  
+    --title-color-light: #09244B;
+    --title-color-dark: #E8E9EA;
+  
+    --footer-bg-color-light:#F2F4F6;
+    --footer-bg-color-dark:#262C3B;
+
+    --navbar-bg-color-light:#a9adb8;
+    --navbar-bg-color-dark:#141414;
+
+    --navbar-title-color-light: #09244B;
+    --navbar-title-color-dark: #E8E9EA;
+
+    --banner-bg-color-light:#c2c8ce;
+    --banner-bg-color-dark:#373c47;
+  }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --item-hover-bg-color-light: #007aff;
+    --item-hover-bg-color-dark: #4491e3;
+
+    --item-hover-color-light: #fff;
+    --item-hover-color-dark: #fff;
+
+    --item-active-bg-color-light: #4491e3;
+    --item-active-bg-color-dark: #4491e3;
+
+    --item-active-color-light: #fff;
+    --item-active-color-dark: #fff;
+
+    --bg-dark: #fff;
+    --bg-light: #1b2130;
+  
+    --bg-search-light: #131722;
+    --bg-search-dark: #f2f4f6;
+  
+    --text-color-dark: #8491A5;
+    --text-color-light: #526581;
+  
+    --title-color-dark: #09244B;
+    --title-color-light: #E8E9EA;
+  
+    --footer-bg-color-dark:#F2F4F6;
+    --footer-bg-color-light:#262C3B;
+    
+    --navbar-bg-color-dark:#a9adb8;
+    --navbar-bg-color-light:#141414;
+
+    --navbar-title-color-dark: #09244B;
+    --navbar-title-color-light: #E8E9EA;
+
+    --banner-bg-color-light:#c2c8ce;
+    --banner-bg-color-dark:#373c47;
+  }
+}
+
+
 
 * {
   font-family: sans-serif;
@@ -18,12 +114,13 @@
 
 .wrapper {
   display: flex;
-  height: 100vh;
+  height: 983px;
 
   .main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
   }
 }
 .hide {

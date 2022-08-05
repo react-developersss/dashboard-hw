@@ -1,6 +1,7 @@
 .navbar {
   padding: 2rem;
-  background-color: blue;
+  background-color: var(--navbar-bg-color-light);
+  color: var(--navbar-title-color-light);
 
   display: flex;
   align-items: center;

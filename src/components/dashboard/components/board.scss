@@ -5,7 +5,7 @@
   gap: 1rem;
   padding: 0.8rem;
   margin: 0.8rem 0;
-  color: #526581;
+  color: var(--text-color-dark);
   border-radius: 8px;
   font-size: 18px;
   transition: all 0.1s linear;
@@ -20,7 +20,7 @@
   svg {
     width: 30px;
     height: 30px;
-    fill: #8491a5;
+    fill: var(--text-color-light);
   }
 
   .board-name {
@@ -36,40 +36,40 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #f2f4f6;
+    background-color: var(--bg-search-light);
   }
 
   &:hover {
-    background-color: var(--item-hover-bg);
-    color: #fff;
+    background-color: var(--item-hover-bg-color-light);
+    color: var(--item-hover-color-light);
 
     .message {
-      color: #526581;
+      color: var(--item-hover-color-light);
     }
 
     svg {
-      fill: #fff !important;
+      fill: var(--item-hover-color-light) !important;
     }
   }
 
   &:focus {
-    background-color: var(--item-active-bg);
-    color: #fff;
+    background-color: var(--item-active-bg-color-light);
+    color: var(--item-active-color-light);
 
     .type {
       svg {
         width: 30px;
         height: 30px;
-        fill: #fff !important;
+        fill: var(--item-active-color-light) !important;
       }
     }
 
     svg {
-      fill: #fff;
+      fill: var(--item-active-color-light);
     }
 
     .message {
-      color: #526581;
+      color: var(--item-active-color-light);
     }
   }
 }

@@ -1,0 +1,44 @@
+.avatar{
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  background-color: var(--footer-bg-color-light);
+  border-radius: 0px 0px 8px 8px;
+  gap: 8px;
+
+  .avatar-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .content{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .avatar-info{
+      text-align: left;
+      background-color: var(--footer-bg-color-light);
+      
+      .avatar-name{
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: var(--text-color-light);
+      }
+  
+      .avatar-mail{
+        font-size: 12px;
+        color: var(--text-color-light);
+      }
+    }
+
+    svg{
+      width: 30px;
+      height: 30px;
+      fill: var(--text-color-light);
+    }
+  }
+}

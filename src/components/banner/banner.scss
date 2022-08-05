@@ -1,6 +1,6 @@
 .banner {
   padding: 3rem;
-  background-color: #f2f4f6;
-  height: 100vh;
-  color: #526581;
+  background-color: var(--banner-bg-color-light);
+  height: 100%;
+  color: var(--text-color-dark);
 }
